@@ -6,7 +6,8 @@ export function Team() {
     {
       name: 'Zhumash Bekzat',
       position: 'CEO',
-      phone: '+7 777 094 0394'
+      phone: '+7 777 094 0394',
+      photo: "/src/assets/avatar.jpg"
     },
     {
       name: 'Аскар Санжар',
@@ -57,7 +58,28 @@ export function Team() {
             >
               <div className="absolute inset-0 bg-gray-900 translate-x-3 translate-y-3 group-hover:translate-x-5 group-hover:translate-y-5 transition-transform"></div>
               <div className="relative p-12 bg-white border-2 border-gray-800">
-                <motion.div 
+<motion.div 
+  className="flex items-center justify-center mb-8"
+  whileHover={{ scale: 1.1, rotate: 5 }}
+  transition={{ duration: 0.3 }}
+>
+  <div className="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center overflow-hidden group-hover:bg-white group-hover:border-2 group-hover:border-gray-800 transition-all">
+    
+    {member.photo ? (
+      <img 
+        src={member.photo} 
+        alt="partner" 
+        className="w-full h-full object-cover rounded-full"
+      />
+    ) : (
+      <Users className="h-16 w-16 text-white group-hover:text-blue-600 transition-colors" />
+    )}
+
+  </div>
+</motion.div>
+
+
+                {/* <motion.div 
                   className="flex items-center justify-center mb-8"
                   whileHover={{ scale: 1.1, rotate: 5 }}
                   transition={{ duration: 0.3 }}
@@ -65,7 +87,7 @@ export function Team() {
                   <div className="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center group-hover:bg-white group-hover:border-2 group-hover:border-gray-800 transition-all">
                     <Users className="h-16 w-16 text-white group-hover:text-blue-600 transition-colors" />
                   </div>
-                </motion.div>
+                </motion.div> */}
                 <h3 className="text-3xl text-center mb-2 tracking-tight">{member.name}</h3>
                 <p className="text-center text-gray-600 mb-6 uppercase text-sm tracking-widest">
                   {member.position}

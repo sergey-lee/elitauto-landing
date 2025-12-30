@@ -90,27 +90,58 @@ export function About() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <motion.div 
-              key={index} 
-              className="relative group cursor-pointer"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              whileHover={{ y: -10 }}
-            >
-              <div className="absolute inset-0 bg-gray-900 translate-x-2 translate-y-2 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
-              <div className="relative p-10 border-2 border-gray-800 bg-white h-full">
-                <div className="mb-6 relative">
-                  <div className="absolute inset-0 bg-blue-500/10 rounded-full w-20 h-20 group-hover:scale-110 transition-transform"></div>
-                  <feature.icon className="h-12 w-12 relative z-10 mt-4 ml-4 text-blue-600" />
-                </div>
-                <h3 className="text-3xl mb-4 tracking-tight">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  {feature.description}
-                </p>
-                <div className="mt-6 h-1 w-12 bg-blue-600 group-hover:w-20 transition-all"></div>
-              </div>
-            </motion.div>
+  key={index} 
+  className="relative group cursor-pointer"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6, delay: index * 0.1 }}
+  whileHover={{ y: -10 }}
+>
+  <div className="absolute inset-0 bg-gray-900 translate-x-2 translate-y-2 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
+
+  <div className="relative p-10 border-2 border-gray-800 bg-white h-full">
+
+    {/* --- блок иконки --- */}
+    <div className="mb-6 relative w-20 h-20">
+      <div className="absolute inset-0 bg-blue-500/10 rounded-full transition-transform group-hover:scale-110"></div>
+      
+      {/* здесь только иконка центрируется */}
+      <div className="w-full h-full flex items-center justify-center relative z-10">
+        <feature.icon className="h-12 w-12 text-blue-600" />
+      </div>
+    </div>
+    {/* --- конец блока иконки --- */}
+
+    <h3 className="text-3xl mb-4 tracking-tight">{feature.title}</h3>
+    <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+
+    <div className="mt-6 h-1 w-12 bg-blue-600 group-hover:w-20 transition-all"></div>
+  </div>
+</motion.div>
+
+            // <motion.div 
+            //   key={index} 
+            //   className="relative group cursor-pointer"
+            //   initial={{ opacity: 0, y: 30 }}
+            //   whileInView={{ opacity: 1, y: 0 }}
+            //   viewport={{ once: true }}
+            //   transition={{ duration: 0.6, delay: index * 0.1 }}
+            //   whileHover={{ y: -10 }}
+            // >
+            //   <div className="absolute inset-0 bg-gray-900 translate-x-2 translate-y-2 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
+            //   <div className="relative p-10 border-2 border-gray-800 bg-white h-full">
+            //     <div className="mb-6 relative">
+            //       <div className="absolute inset-0 bg-blue-500/10 rounded-full w-20 h-20 group-hover:scale-110 transition-transform"></div>
+            //       <feature.icon className="h-12 w-12 relative z-10 mt-4 ml-4 text-blue-600" />
+            //     </div>
+            //     <h3 className="text-3xl mb-4 tracking-tight">{feature.title}</h3>
+            //     <p className="text-gray-600 leading-relaxed">
+            //       {feature.description}
+            //     </p>
+            //     <div className="mt-6 h-1 w-12 bg-blue-600 group-hover:w-20 transition-all"></div>
+            //   </div>
+            // </motion.div>
           ))}
         </div>
       </div>

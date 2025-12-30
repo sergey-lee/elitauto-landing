@@ -120,10 +120,10 @@ export function PopularCars() {
                   <h3 className="text-3xl mb-3 tracking-tight">{car.model}</h3>
                   <p className="text-gray-600 mb-4">{car.description}</p>
                   
-                  <div className="flex items-center text-blue-600 group-hover:text-blue-700 transition-colors">
+                  {/* <div className="flex items-center text-blue-600 group-hover:text-blue-700 transition-colors">
                     <span className="text-sm uppercase tracking-wider mr-2">Подробнее</span>
                     <ArrowRight className="h-4 w-4 group-hover:translate-x-2 transition-transform" />
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Hover effect border */}

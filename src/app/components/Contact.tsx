@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, MessageCircle, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Send, Instagram } from 'lucide-react';
 import { Button } from './ui/button';
 import { motion } from 'motion/react';
 
@@ -23,14 +23,16 @@ export function Contact() {
       icon: MapPin,
       title: 'Адрес',
       items: [
-        { label: '인천광역시 항동7가 17-70', link: null }
+        { label: 'Корея: 인천광역시 항동7가 17-70', link: null },
+        { label: 'Казахстан: Астана, Нажиметдинова 39', link: null }
       ]
     }
   ];
 
   const messengers = [
     { name: 'WhatsApp', phone: '+7 777 094 0394', link: 'https://wa.me/77770940394', icon: MessageCircle },
-    { name: 'Telegram', phone: '+8210-5709-0394', link: 'https://t.me/+821057090394', icon: Send }
+    { name: 'Telegram', phone: '+8210-5709-0394', link: 'https://t.me/+821057090394', icon: Send },
+    { name: 'Instagram', phone: '@elitavto_korea', link: 'https://www.instagram.com/elitavto_korea', icon: Instagram }
   ];
 
   return (
@@ -134,10 +136,10 @@ export function Contact() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full border-2 border-blue-500 text-white hover:bg-blue-600 hover:border-blue-600 px-8 py-8 text-lg group"
+                  className="w-full border-2 border-blue-500 text-lg hover:bg-blue-600 hover:border-blue-600 px-8 py-8 text-lg group"
                   onClick={() => window.open(messenger.link, '_blank')}
                 >
-                  <messenger.icon className="mr-3 h-6 w-6 text-blue-400 group-hover:text-white" />
+                  <messenger.icon className="mr-3 h-10 w-10 text-blue-400 group-hover:text-white" />
                   <div className="text-left">
                     <div className="text-sm opacity-70 mb-1">{messenger.name}</div>
                     <div>{messenger.phone}</div>

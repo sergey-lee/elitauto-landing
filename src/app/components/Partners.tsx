@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 export function Partners() {
   const partners = [
     { name: 'src/assets/encar.jpg', description: 'Крупнейший автомобильный портал Кореи' },
-    { name: 'src/assets/kb.png', description: 'Ведущий сервис по продаже автомобилей' },
+    { name: 'src/assets/kb.jpg', description: 'Ведущий сервис по продаже автомобилей' },
     { name: 'src/assets/heydealer.png', description: 'Платформа для дилеров и покупателей' }
   ];
 
