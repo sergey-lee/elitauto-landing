@@ -79,7 +79,41 @@ export function Header() {
         </div>
 
         {/* Mobile Navigation */}
-        <AnimatePresence>
+
+<AnimatePresence>
+  {mobileMenuOpen && (
+    <motion.nav
+      className="md:hidden absolute top-20 left-0 right-0 bg-gray-900/95 backdrop-blur-md z-40"
+      initial={{ opacity: 0, height: 0 }}
+      animate={{ opacity: 1, height: 'auto' }}
+      exit={{ opacity: 0, height: 0 }}
+      transition={{ duration: 0.3 }}
+    >
+      {navItems.map((item, index) => (
+        <motion.button
+          key={item.href}
+          onClick={() => {
+            const el = document.getElementById(item.href);
+            if (el) {
+              const yOffset = -80; // поправка на фиксированный header
+              const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+              window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+            setMobileMenuOpen(false);
+          }}
+          className="block w-full text-left py-4 text-white hover:bg-blue-600/20 px-4 transition-colors border-b border-blue-500/10"
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, delay: index * 0.1 }}
+        >
+          {item.label}
+        </motion.button>
+      ))}
+    </motion.nav>
+  )}
+</AnimatePresence>
+
+        {/* <AnimatePresence>
           {mobileMenuOpen && (
             <motion.nav
               className="md:hidden pb-6 border-t border-white/10"
@@ -91,16 +125,7 @@ export function Header() {
               {navItems.map((item, index) => (
                 <motion.button
                   key={item.href}
-                  // onClick={() => scrollToSection(item.href)}
-                  onClick={() => {
-  const el = document.getElementById(item.href);
-  if (el) {
-    const yOffset = -80; // поправка на фиксированный header
-    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
-  }
-  setMobileMenuOpen(false); // закрываем меню
-}}
+                  onClick={() => scrollToSection(item.href)}
                   className="block w-full text-left py-4 text-white hover:bg-blue-600/20 px-4 transition-colors border-b border-blue-500/10"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
@@ -111,7 +136,7 @@ export function Header() {
               ))}
             </motion.nav>
           )}
-        </AnimatePresence>
+        </AnimatePresence> */}
       </div>
     </motion.header>
   );
