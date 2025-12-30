@@ -2,9 +2,9 @@ import { motion } from 'motion/react';
 
 export function Partners() {
   const partners = [
-    { name: 'Encar', description: 'Крупнейший автомобильный портал Кореи' },
-    { name: 'KB 차차차', description: 'Ведущий сервис по продаже автомобилей' },
-    { name: '헤이딜러', description: 'Платформа для дилеров и покупателей' }
+    { name: 'src/assets/encar.jpg', description: 'Крупнейший автомобильный портал Кореи' },
+    { name: 'src/assets/kb.png', description: 'Ведущий сервис по продаже автомобилей' },
+    { name: 'src/assets/heydealer.png', description: 'Платформа для дилеров и покупателей' }
   ];
 
   return (
@@ -39,6 +39,38 @@ export function Partners() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+  {partners.map((partner, index) => (
+    <motion.div 
+      key={index} 
+      className="relative group cursor-pointer"
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      whileHover={{ scale: 1.05 }}
+    >
+      <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+      <div className="relative p-12 border-2 border-gray-800 bg-white group-hover:bg-transparent transition-colors text-center h-full flex flex-col justify-center">
+        
+        {/* картинка вместо текста */}
+        <img 
+          src={partner.name} 
+          alt={partner.description} 
+          className="mx-auto w-28 h-28 object-contain mb-4 group-hover:brightness-200 transition-all"
+        />
+
+        <div className="h-px w-16 bg-gray-800 group-hover:bg-white transition-colors mx-auto mb-4"></div>
+        <p className="text-gray-600 group-hover:text-gray-300 transition-colors">
+          {partner.description}
+        </p>
+      </div>
+    </motion.div>
+  ))}
+</div>
+
+
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {partners.map((partner, index) => (
             <motion.div 
               key={index} 
@@ -59,7 +91,7 @@ export function Partners() {
               </div>
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

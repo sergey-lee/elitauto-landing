@@ -20,10 +20,10 @@ export function PopularCars() {
     },
     {
       brand: 'Lexus',
-      model: 'ES',
-      image: 'https://github.com/sergey-lee/elitauto-landing/blob/main/src/assets/lexus.jpg?raw=true',
-      description: 'Элегантный бизнес-седан',
-      price: 'от $41,000'
+      model: 'LX700h',
+      image: 'https://github.com/sergey-lee/elitauto-landing/blob/main/src/assets/lexus_lh700.jpg?raw=true',
+      description: 'Компактный премиум кроссовер',
+      price: 'от $120,000'
     },
     {
       brand: 'BMW',
