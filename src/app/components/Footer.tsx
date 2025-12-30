@@ -22,11 +22,11 @@ export function Footer() {
             </div>
           </div>
           
-          <p className="text-gray-400 mb-8 text-lg">
+          <p className="text-gray-400 mb-8 text-2xl">
             Экспорт автомобилей из Южной Кореи
-          </p>
+          </p>  
           
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 text-sm text-gray-500">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 text-2xl text-gray-500">
             <div>
               <p className="text-blue-400 mb-2">Более 3х лет</p>
               <p>на рынке</p>
