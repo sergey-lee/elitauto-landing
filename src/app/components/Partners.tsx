@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
-import encar from '../assets/encar.jpg'
-import kb from '../assets/kb.jpg'
-import heydealer from '../assets/heydealer.png'
+import encar from '../../assets/encar.jpg'
+import kb from '../../assets/kb.jpg'
+import heydealer from '../../assets/heydealer.png'
 
 export function Partners() {
   const partners = [
