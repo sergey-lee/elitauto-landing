@@ -2,7 +2,7 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Phone, Mail, ArrowRight, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
 import { motion } from 'motion/react';
-import heroImage from 'figma:asset/3f9fced673a76c809afad8fa00b8670af1faf083.png';
+import heroImage from '../../assets/3f9fced673a76c809afad8fa00b8670af1faf083.png';
 
 export function Hero() {
   return (
