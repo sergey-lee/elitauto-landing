@@ -1,13 +1,10 @@
 import { motion } from 'motion/react';
-import encar from '../../assets/encar.jpg'
-import kb from '../../assets/kb.jpg'
-import heydealer from '../../assets/heydealer.png'
 
 export function Partners() {
   const partners = [
-    { name: encar, description: 'Крупнейший автомобильный портал Кореи' },
-    { name: kb, description: 'Ведущий сервис по продаже автомобилей' },
-    { name: heydealer, description: 'Платформа для дилеров и покупателей' }
+    { name: 'public/encar.jpg', description: 'Крупнейший автомобильный портал Кореи' },
+    { name: 'public/kb.jpg', description: 'Ведущий сервис по продаже автомобилей' },
+    { name: 'public/heydealer.png', description: 'Платформа для дилеров и покупателей' }
   ];
 
   return (
