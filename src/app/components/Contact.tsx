@@ -23,8 +23,9 @@ export function Contact() {
       icon: MapPin,
       title: 'Адрес',
       items: [
-        { label: 'Корея: 인천광역시 항동7가 17-70', link: null },
-        { label: 'Казахстан: Астана, Нажиметдинова 39', link: null }
+        { label: 'Южная Корея: 인천광역시 항동7가 17-70', link: null },
+        { label: 'Казахстан: Астана, Нажиметдинова 39', link: null },
+        { label: 'Казахстан: Алматы, Ангарская улица, 87г/1', link: null }
       ]
     }
   ];
