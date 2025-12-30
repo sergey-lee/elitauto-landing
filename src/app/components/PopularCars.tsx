@@ -9,40 +9,40 @@ export function PopularCars() {
       model: 'G80',
       image: 'https://images.unsplash.com/photo-1714614935738-f953543c8c4d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW5lc2lzJTIwZzgwJTIwbHV4dXJ5fGVufDF8fHx8MTc2Njg5OTUyMXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
       description: 'Премиум седан с роскошным интерьером',
-      price: 'от $45,000'
+      price: 'от $15,000'
     },
     {
       brand: 'Genesis',
       model: 'GV70',
       image: 'https://images.unsplash.com/photo-1723100286449-5b0fd5291855?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnZW5lc2lzJTIwZ3Y3MCUyMHN1dnxlbnwxfHx8fDE3NjY4OTk1MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
       description: 'Компактный премиум кроссовер',
-      price: 'от $42,000'
+      price: 'от $19,000'
     },
     {
       brand: 'Lexus',
       model: 'ES',
-      image: 'https://images.unsplash.com/photo-1657715978164-8a586531686e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsZXh1cyUyMGx1eHVyeSUyMGNhcnxlbnwxfHx8fDE3NjY4OTk1MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: 'https://github.com/sergey-lee/elitauto-landing/blob/main/src/assets/lexus.jpg?raw=true',
       description: 'Элегантный бизнес-седан',
       price: 'от $41,000'
     },
     {
       brand: 'BMW',
       model: '5 Series',
-      image: 'https://images.unsplash.com/photo-1731142582229-e0ee70302c02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibXclMjBsdXh1cnklMjBzZWRhbnxlbnwxfHx8fDE3NjY4OTk1MjJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: 'https://github.com/sergey-lee/elitauto-landing/blob/main/src/assets/bmw5.jpg?raw=true',
       description: 'Спортивный премиум седан',
-      price: 'от $55,000'
+      price: 'от $10,000'
     },
     {
       brand: 'Hyundai',
-      model: 'Sonata',
-      image: 'https://images.unsplash.com/photo-1726038021851-9dc24938b376?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoeXVuZGFpJTIwc29uYXRhfGVufDF8fHx8MTc2Njg5OTUyM3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      description: 'Современный семейный седан',
-      price: 'от $25,000'
+      model: 'Palisade',
+      image: 'https://github.com/sergey-lee/elitauto-landing/blob/main/src/assets/palisade.jpg?raw=true',
+      description: 'Современный семейный SUV',
+      price: 'от $30,000'
     },
     {
       brand: 'Kia',
       model: 'Sportage',
-      image: 'https://images.unsplash.com/photo-1692370793611-7724a38ab701?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxraWElMjBzcG9ydGFnZSUyMHN1dnxlbnwxfHx8fDE3NjY4OTk1MjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: 'https://github.com/sergey-lee/elitauto-landing/blob/main/src/assets/sportage.jpg?raw=true',
       description: 'Практичный городской SUV',
       price: 'от $27,000'
     }
