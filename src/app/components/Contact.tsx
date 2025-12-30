@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, MessageCircle, Send, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Send, Instagram, Youtube, Music2 } from 'lucide-react';
 import { Button } from './ui/button';
 import { motion } from 'motion/react';
 
@@ -33,7 +33,9 @@ export function Contact() {
   const messengers = [
     { name: 'WhatsApp', phone: '+7 777 094 0394', link: 'https://wa.me/77770940394', icon: MessageCircle },
     { name: 'Telegram', phone: '+8210-5709-0394', link: 'https://t.me/+821057090394', icon: Send },
-    { name: 'Instagram', phone: '@elitavto_korea', link: 'https://www.instagram.com/elitavto_korea', icon: Instagram }
+    { name: 'Instagram', phone: '@elitavto_korea', link: 'https://www.instagram.com/elitavto_korea', icon: Instagram },
+    { name: 'TikTok', phone: '@elitavto_korea', link: 'https://www.tiktok.com/@elitavto_korea', icon: Music2 },
+    { name: 'YouTube', phone: '@elitavto_korea', link: 'https://youtube.com/@elitavto_korea', icon: Youtube }
   ];
 
   return (
