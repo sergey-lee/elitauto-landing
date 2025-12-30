@@ -2,9 +2,9 @@ import { motion } from 'motion/react';
 
 export function Partners() {
   const partners = [
-    { name: 'public/encar.jpg', description: 'Крупнейший автомобильный портал Кореи' },
-    { name: 'public/kb.jpg', description: 'Ведущий сервис по продаже автомобилей' },
-    { name: 'public/heydealer.png', description: 'Платформа для дилеров и покупателей' }
+    { name: '/encar.jpg', description: 'Крупнейший автомобильный портал Кореи' },
+    { name: '/kb.jpg', description: 'Ведущий сервис по продаже автомобилей' },
+    { name: '/heydealer.png', description: 'Платформа для дилеров и покупателей' }
   ];
 
   return (
