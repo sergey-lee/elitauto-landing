@@ -17,7 +17,7 @@ export function Team() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-blue-50 to-white relative overflow-hidden">
+    <section className="py-32 bg-gradient-to-b from-blue-50 to-white relative overflow-hidden" id="team">
       {/* Decorative circles */}
       <div className="absolute top-20 right-10 w-64 h-64 border border-blue-500/20 rounded-full"></div>
       <div className="absolute bottom-20 left-10 w-96 h-96 border border-blue-500/10 rounded-full"></div>
