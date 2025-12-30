@@ -91,7 +91,16 @@ export function Header() {
               {navItems.map((item, index) => (
                 <motion.button
                   key={item.href}
-                  onClick={() => scrollToSection(item.href)}
+                  // onClick={() => scrollToSection(item.href)}
+                  onClick={() => {
+  const el = document.getElementById(item.href);
+  if (el) {
+    const yOffset = -80; // поправка на фиксированный header
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+  // setMobileMenuOpen(false); // закрываем меню
+}}
                   className="block w-full text-left py-4 text-white hover:bg-blue-600/20 px-4 transition-colors border-b border-blue-500/10"
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
