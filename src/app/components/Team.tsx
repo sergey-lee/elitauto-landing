@@ -7,7 +7,7 @@ export function Team() {
       name: 'Zhumash Bekzat',
       position: 'CEO',
       phone: '+7 777 094 0394',
-      photo: "public/avatar.jpg"
+      photo: "/avatar.jpg"
     },
     {
       name: 'Аскар Санжар',
