@@ -49,7 +49,7 @@ export function Testimonials() {
             <div className="h-1 w-12 bg-blue-400"></div>
             <div className="h-1 w-6 bg-blue-300"></div>
           </div>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl text-gray-800 leading-relaxed">
             Более 150 довольных клиентов доверяют нам
           </p>
         </motion.div>

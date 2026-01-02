@@ -76,7 +76,7 @@ export function Contact() {
             <div className="h-1 w-12 bg-blue-400"></div>
             <div className="h-1 w-6 bg-blue-300"></div>
           </div>
-          <p className="text-xl text-gray-400 leading-relaxed">
+          <p className="text-xl text-gray-300 leading-relaxed">
             Свяжитесь с нами любым удобным способом
           </p>
         </motion.div>
