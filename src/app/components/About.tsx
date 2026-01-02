@@ -46,7 +46,7 @@ export function About() {
             <div className="h-1 w-12 bg-blue-400"></div>
             <div className="h-1 w-6 bg-blue-300"></div>
           </div>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl text-gray-1000 leading-relaxed">
             ELIT AUTO KOREA — ваш надежный партнер по экспорту автомобилей из Южной Кореи. 
             Более 3 лет мы помогаем клиентам приобретать качественные автомобили напрямую 
             от производителей и проверенных дилеров.
@@ -100,21 +100,21 @@ export function About() {
 >
   <div className="absolute inset-0 bg-gray-900 translate-x-2 translate-y-2 transition-transform group-hover:translate-x-4 group-hover:translate-y-4"></div>
 
-  <div className="relative p-10 border-2 border-gray-800 bg-white h-full">
+  <div className="relative p-10 border-2 border-gray-800 bg-blue-600 h-full">
 
     {/* --- блок иконки --- */}
     <div className="mb-6 relative w-20 h-20">
-      <div className="absolute inset-0 bg-blue-500/10 rounded-full transition-transform group-hover:scale-110"></div>
+      <div className="absolute inset-0 bg-blue-300 rounded-full transition-transform group-hover:scale-110"></div>
       
       {/* здесь только иконка центрируется */}
       <div className="w-full h-full flex items-center justify-center relative z-10">
-        <feature.icon className="h-12 w-12 text-blue-600" />
+        <feature.icon className="h-12 w-12 text-blue-50" />
       </div>
     </div>
     {/* --- конец блока иконки --- */}
 
-    <h3 className="text-3xl mb-4 tracking-tight">{feature.title}</h3>
-    <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+    <h3 className="text-3xl text-white mb-4 tracking-tight">{feature.title}</h3>
+    <p className="text-gray-200 leading-relaxed">{feature.description}</p>
 
     <div className="mt-6 h-1 w-12 bg-blue-600 group-hover:w-20 transition-all"></div>
   </div>

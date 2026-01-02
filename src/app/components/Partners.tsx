@@ -51,7 +51,7 @@ export function Partners() {
     >
       <div className="absolute inset-0 bg-blue-600 opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
-      <div className="relative p-12 border-2 border-gray-800 bg-white group-hover:bg-transparent transition-colors text-center h-full flex flex-col justify-center">
+      <div className="relative p-12 border-2 border-gray-800 bg-blue-600 group-hover:bg-transparent transition-colors text-center h-full flex flex-col justify-center">
         
         {/* картинка вместо текста */}
         <img 
@@ -61,7 +61,7 @@ export function Partners() {
         />
 
         <div className="h-px w-16 bg-gray-800 group-hover:bg-white transition-colors mx-auto mb-4"></div>
-        <p className="text-gray-600 group-hover:text-gray-300 transition-colors">
+        <p className="text-gray-200 group-hover:text-white transition-colors">
           {partner.description}
         </p>
       </div>
