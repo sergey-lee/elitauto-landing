@@ -12,7 +12,8 @@ export function Team() {
     {
       name: 'Аскар Санжар',
       position: 'Директор',
-      phone: '+7 771 193 7771'
+      phone: '+7 771 193 7771',
+      photo: "/anonymous.jpg"
     }
   ];
 
