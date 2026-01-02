@@ -71,7 +71,7 @@ export function PopularCars() {
           </div>
           <h2 className="text-5xl md:text-7xl mb-8 tracking-tight">
             Выберите свой<br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-black">
               автомобиль мечты
             </span>
           </h2>

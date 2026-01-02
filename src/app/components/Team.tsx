@@ -41,7 +41,7 @@ export function Team() {
             <div className="h-1 w-12 bg-blue-400"></div>
             <div className="h-1 w-6 bg-blue-300"></div>
           </div>
-          <p className="text-xl text-gray-600 leading-relaxed">
+          <p className="text-xl text-gray-900 leading-relaxed">
             Профессионалы с многолетним опытом в автомобильной индустрии
           </p>
         </motion.div>
@@ -57,13 +57,13 @@ export function Team() {
               transition={{ duration: 0.6, delay: index * 0.2 }}
             >
               <div className="absolute inset-0 bg-gray-900 translate-x-3 translate-y-3 group-hover:translate-x-5 group-hover:translate-y-5 transition-transform"></div>
-              <div className="relative p-12 bg-white border-2 border-gray-800">
+              <div className="relative p-12 bg-blue-600 border-2 border-gray-800">
 <motion.div 
   className="flex items-center justify-center mb-8"
   whileHover={{ scale: 1.1, rotate: 5 }}
   transition={{ duration: 0.3 }}
 >
-  <div className="w-32 h-32 bg-blue-600 rounded-full flex items-center justify-center overflow-hidden group-hover:bg-white group-hover:border-2 group-hover:border-gray-800 transition-all">
+  <div className="w-32 h-32 bg-blue-100 rounded-full flex items-center justify-center overflow-hidden group-hover:bg-white group-hover:border-2 group-hover:border-gray-800 transition-all">
     
     {member.photo ? (
       <img 
@@ -88,12 +88,12 @@ export function Team() {
                     <Users className="h-16 w-16 text-white group-hover:text-blue-600 transition-colors" />
                   </div>
                 </motion.div> */}
-                <h3 className="text-3xl text-center mb-2 tracking-tight">{member.name}</h3>
-                <p className="text-center text-gray-600 mb-6 uppercase text-sm tracking-widest">
+                <h3 className="text-3xl text-gray-100 text-center mb-2 tracking-tight">{member.name}</h3>
+                <p className="text-center text-gray-200 mb-6 uppercase text-sm tracking-widest">
                   {member.position}
                 </p>
                 <div className="h-px bg-gray-200 mb-6"></div>
-                <div className="flex items-center justify-center text-blue-600 group-hover:text-blue-700 transition-colors">
+                <div className="flex items-center justify-center text-blue-300 group-hover:text-blue-100 transition-colors">
                   <Phone className="h-5 w-5 mr-3" />
                   <a href={`tel:${member.phone}`} className="hover:underline text-lg">
                     {member.phone}
