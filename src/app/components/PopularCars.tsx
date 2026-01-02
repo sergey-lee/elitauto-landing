@@ -49,7 +49,7 @@ export function PopularCars() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-blue-50 to-white relative overflow-hidden">
+    <section className="py-32 bg-gradient-to-b from-blue-500 to-blue-50 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-1/3 h-full opacity-5">
         <div className="absolute inset-0" style={{
@@ -114,7 +114,7 @@ export function PopularCars() {
                 </div>
 
                 {/* Content */}
-                <div className="relative p-6 bg-white">
+                <div className="relative p-6 bg-blue-50">
                   <div className="mb-2">
                     <span className="text-sm text-blue-600 uppercase tracking-wider">{car.brand}</span>
                   </div>

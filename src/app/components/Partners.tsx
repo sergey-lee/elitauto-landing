@@ -8,7 +8,7 @@ export function Partners() {
   ];
 
   return (
-    <section className="py-32 bg-white relative overflow-hidden">
+    <section className="py-32 bg-gradient-to-b from-blue-500 from-blue-50 relative overflow-hidden">
       {/* Large text background */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20rem] font-bold text-blue-500/[0.02] whitespace-nowrap pointer-events-none">
         PARTNERS

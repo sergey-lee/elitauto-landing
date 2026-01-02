@@ -22,7 +22,7 @@ export function About() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-white to-blue-50 relative overflow-hidden" id="about">
+    <section className="py-32 bg-gradient-to-b from-blue-500 from-blue-50 relative overflow-hidden" id="about">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
