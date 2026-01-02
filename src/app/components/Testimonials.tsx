@@ -24,7 +24,7 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="py-32 bg-gradient-to-b from-white to-blue-50 relative overflow-hidden">
+    <section className="py-32 bg-gradient-to-b from-blue-500 to-blue-50 relative overflow-hidden">
       {/* Background text */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] font-bold text-blue-500/[0.02] whitespace-nowrap pointer-events-none">
         REVIEWS
